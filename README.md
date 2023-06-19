@@ -45,3 +45,28 @@ This simulation environment is based on pybullet. You can follow the instruction
 
   ![avatar](data_collect.png)
    
+## Train Model
+
+* Train Model:
+
+  ```
+  python main.py --mode train -task_type "rope_line"
+  ```
+
+  ```
+  python main_multi.py --mode train 
+  ```
+  
+  where `main.py` represent single task learning fashion, `main_multi.py`represent multi-task learning fashion
+
+## Evaluate Model
+
+* Evaluate Model:
+
+  ```
+  python main.py --mode test -task_type "rope_line"
+  ```
+
+  ```
+  python main_multi.py --mode test
+  ```  
